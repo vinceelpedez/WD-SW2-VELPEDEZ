@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Dev */
+header, 
+header* {
+    outline: 1px blue dashed;
+
+}
+/* Prod */
+body {
+    background-color: antiquewhite;
+}
+
+section.hero
+section.hero *{
+    outline: 1px red dashed;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: black 4px 4px;
+    transition: .2s ease-out;
+    transform: translate(4px 4px);
+    background: transparent;
+    border: 1px transparent solid;
+    
+    &::hover {
+        border: 1px black solid;
+        box-shadow: black 0 0;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    
+    & div {
+        padding: 5vh;
+        width: 50%;
+    }
+}
+
+.hero .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & button {
+        display: inline-flex;
+        justify-content: center;
+        appearance: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+        overflow: hidden;
+        background-image: radial-gradient(100% 100% at 100% 0, lightblue 0, blue 100%);
+        color: white;
+        text-decoration: none;
+        box-shadow: grey(149, 157, 165, 0.2) 0px 8px 24px;
+        transition: .2s ease-in-out;
+        border: none;
+
+        
+        &:hover {
+            box-shadow: grey(0, 0, 0.35) 0px 5px 15px;
+            transform: translate(0 5px);
+        }
+    }
+
+    span:hover{
+        transition: .2s ease-in-out;
+        color: blue;
+
+    }
+    }
+}
